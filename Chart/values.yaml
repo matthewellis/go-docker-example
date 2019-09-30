@@ -1,0 +1,4 @@
+---
+image:
+  name: 477288082536.dkr.ecr.eu-west-1.amazonaws.com/build-dummy-service
+  tag: latest

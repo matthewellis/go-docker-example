@@ -1,0 +1,14 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: example-app
+spec:
+  revisionHistoryLimit: 2
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: example-app
+          image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+          imagePullPolicy: "IfNotPresent"
